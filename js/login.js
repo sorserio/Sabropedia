@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Evento para el botón "Regístrate como Persona"
     registroPersonaBtn.addEventListener('click', function() {
-        window.location.href = 'RegisterPersona.html';  // Redirige a la página de registro de persona
+        window.location.href = 'registroPersona.html';  // Redirige a la página de registro de persona
     });
 
     // Evento para el botón "Regístrate como Comercial"
     registroComercialBtn.addEventListener('click', function() {
-        window.location.href = 'RegistroComercial.html';  // Redirige a la página de registro comercial
+        window.location.href = 'registroComercial.html';  // Redirige a la página de registro comercial
     });
 });

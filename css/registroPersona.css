@@ -165,3 +165,91 @@ footer {
 .social-icon:hover {
     color: #ffffff;
 }
+
+
+
+
+/*responsive*/
+@media (max-width: 1024px) {
+    .logo {
+        width: 180px;
+        height: auto;
+    }
+
+    .FormularioP {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .FormularioP input {
+        font-size: 0.9rem;
+    }
+
+    .FormularioP button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .search-container {
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #login {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerSection {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .loginSection {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    main {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .FormularioP {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .FormularioP h2 {
+        font-size: 1.2rem;
+    }
+
+    .FormularioP input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .FormularioP button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+}

@@ -421,5 +421,170 @@ body {
                 color: #3C3C43;
             }
             
+        }
 
-            }
+        .stars {
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+            direction: ltr; /* De izquierda a derecha */
+        }
+        
+        .star {
+            font-size: 2rem;
+            color: #ccc; /* Color gris por defecto */
+            transition: color 0.2s ease;
+        }
+        
+        .star.selected {
+            color: #f5c518; /* Amarillo para estrellas seleccionadas */
+        }
+        
+        .star:hover ~ .star {
+            color: #ccc; /* Gris para estrellas posteriores no seleccionadas al pasar el mouse */
+        }
+        
+
+        
+
+
+
+
+
+
+
+        /*responsive*/
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .card .gallery img {
+        width: 48%;
+        height: 200px;
+    }
+
+    .nav-buttons ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .local-details {
+        flex-direction: column;
+    }
+
+    .local-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headerSection {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 180px;
+        height: 100px;
+    }
+
+    #login {
+        margin-top: 10px;
+    }
+
+    .nav-buttons ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .gallery-img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón desplegable */
+.profile-menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Imagen de perfil */
+.profile-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.profile-menu img:hover {
+    border-color: #f5c518;
+}
+
+/* Flecha desplegable */
+.profile-menu span:last-child {
+    font-size: 0.8rem;
+}
+
+/* Menú desplegable */
+.profile-menu-options {
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del botón */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: 150px;
+}
+
+.profile-menu-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.profile-menu-options a:hover {
+    background-color: #f5c518;
+    color: white;
+}
+
+/* Mostrar el menú al hacer hover */
+.profile-menu:hover .profile-menu-options {
+    display: block;
+}

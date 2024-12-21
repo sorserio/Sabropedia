@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styleDE.css">
+    <link rel="stylesheet" href="css/detalles.css">
     <title>Sabropedia</title>
 </head>
 
@@ -27,9 +27,16 @@
                     <li> <a href="heladerias.html"><h5>FOOD TRUCKS</h5></a></li>
                 </ul>
             </div>
-            <div class="loginSection">
-                <a href="/login.html" id="login">Cerrar Sesión</a>
-            </div>
+            <div class="profile-menu">
+                <button class="profile-menu-toggle">
+                    <img src="img/flautas.jpg" alt="Foto de perfil" class="profile-menu">
+                    <span class="profile-menu">Mi perfil</span>
+                    <span class="profile-menu">▼</span>
+                </button>
+                <div class="profile-menu-options">
+                    <a href="login.html" class="profile-menu">Iniciar sesión</a>
+                    <a href="asistencia.php" class="profile-menu">Asistencia</a>
+                </div>
         </nav>
 
     </header>
@@ -87,22 +94,29 @@
 
         <!-- Formulario para agregar reseña (ubicado aquí) -->
         <div class="add-review">
-            <h4>Cuéntanos, qué te pareció nuestro servicio?</h4>
-            <form action="guardar_resena.php" method="POST">
+            <h4>Cuéntanos, ¿qué te pareció nuestro servicio?</h4>
+            <form action="guardar_resena.php" method="POST" enctype="multipart/form-data">
                 <textarea name="resena" placeholder="Escribe tu reseña aquí..." required></textarea>
                 <div class="rating">
                     <label>Valoración:</label>
-                    <select name="rating" required>
-                        <option value="1">1 estrella</option>
-                        <option value="2">2 estrellas</option>
-                        <option value="3">3 estrellas</option>
-                        <option value="4">4 estrellas</option>
-                        <option value="5">5 estrellas</option>
-                    </select>
+                    <div class="stars" id="rating-stars">
+                        <input type="hidden" name="rating" id="rating-value" required>
+                        <span data-value="1" class="star">★</span>
+                        <span data-value="2" class="star">★</span>
+                        <span data-value="3" class="star">★</span>
+                        <span data-value="4" class="star">★</span>
+                        <span data-value="5" class="star">★</span>
+                    </div>
+                </div>
+                <div class="upload-image">
+                    <label for="imagen">Sube una imagen de tu experiencia:</label>
+                    <input type="file" name="imagen" id="imagen" accept="image/*" required>
                 </div>
                 <button type="submit" class="submit-review">Enviar Reseña</button>
             </form>
         </div>
+        
+        
 
         <!-- Reseñas -->
         <div class="reviews">
@@ -136,7 +150,7 @@
     </footer>
 
     <!-- JavaScript file to handle interactions -->
-<script src="./main.js"></script>
+<script src="./detalles.js"></script>
 </body>
 
 

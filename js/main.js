@@ -1,30 +1,15 @@
-//Login alert: welcome
-const button = document.getElementById('login');
-button.onclick = function () {
-    const username = document.getElementById('username').value;
-    alert('Bienvenid@' + username);
-};
+document.addEventListener('DOMContentLoaded', () => {
+    const userProfilePic = "ruta/a/la/foto/del/usuario.jpg"; // Cambia por la URL de la imagen del usuario
+    const profilePicture = document.querySelector('.user-profile img');
 
-//Cart count 
-let likeCount = 0;
-function incrementCartCount() {
-    likeCount++;
-    document.getElementById('cartCount').textContent = likeCount;
-}
-document.getElementById('btnOrange1').addEventListener('click', incrementCartCount);
-document.getElementById('btnOrange2').addEventListener('click', incrementCartCount);
-
-//Dynamic image change
-const image = document.getElementById('hoverImage');
-
-// Change the pricipal image
-image.addEventListener('mouseenter', () => {
-    image.src = './img/comida-mexicana.jpg';
-});
-
-// Back to the principal image
-image.addEventListener('mouseleave', () => {
-    image.src = './img/comida-mexicana2.jpg';
+    if (userProfilePic) {
+        profilePicture.src = userProfilePic;
+    }
 });
 
 
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');  // Toggle entre mostrar y ocultar el menú
+});
