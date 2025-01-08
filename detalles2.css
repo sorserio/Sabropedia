@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    background-color: red;
+    height: 100px;
+}
+
+.navegador {
+    background-color: #CF362C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.logo {
+    width: 220px;
+    height: 120px;
+}
+
+.nav-buttons ul{
+    display: flex; 
+    padding: 10px;
+    font-weight: 500;
+    justify-content: space-around;
+    gap: 20px; 
+}
+
+.nav-buttons ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.nav-buttons ul li {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.nav-buttons ul li a {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF5449;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons ul li a:hover {
+    background-color: #ffffff;
+    color: #3C3C43;
+}
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.profile-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.profile-menu img:hover {
+    border-color: #f5c518;
+}
+
+.profile-menu span:last-child {
+    font-size: 0.8rem;
+}
+
+.profile-menu-options {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: 150px;
+}
+
+.profile-menu-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.profile-menu-options a:hover {
+    background-color: #f5c518;
+    color: white;
+}
+
+
+.profile-menu:hover .profile-menu-options {
+    display: block;
+}
+
+.banner-local{
+    width: 100%;
+    background-color: orange;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.logo-banner{
+     
+    height: 200px; 
+    
+}
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    background-color: rgb(107, 22, 22);
+}
+
+.aside-info{
+    width: 20%;
+    height: 850px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto{
+    font-size: 30px;
+    text-align: center;
+    width: 60%;
+}
+.container-local{
+    width: 70%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#carouselExampleControls{
+    
+    height: 250px ;
+    width: 80%;
+}
+.carousel-item img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+  }
+.container-info{
+    width: 80%;
+    height: 250px;
+   
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+.contacto{
+    width: 100%;
+    
+    height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 83, 83);
+    color: white;
+    align-items: center;
+}
+.reseñas{
+    width: 100%;    
+    height: 100px;
+}
+.card{
+    border: none;
+    background-color: rgb(255, 111, 111);
+    border-radius: 30px;
+}
+.card-body{
+    background-color: rgb(255, 111, 111);
+    border-radius: 30px;
+}
+.img-reseña{
+    width: 100%;
+    margin-bottom: 20px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    
+}

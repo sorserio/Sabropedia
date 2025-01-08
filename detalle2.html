@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS + Dependencias (jQuery y Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/detalles2.css">
+    <script defer src="./detalle.js"></script>
+</head>
+<body>
+    <header>
+
+    
+    <nav class="navegador">
+        <img class="logo" src="./img/logo.png" alt="logo">
+            <div class="nav-buttons">
+                <ul>
+                    <li> <a href="index.html">
+                            <h5>INICIO</h5>
+                        </a></li>
+                    <li> <a href="heladerias.html">
+                            <h5>RESTAURANTES</h5>
+                        </a></li>
+                    <li> <a href="heladerias.html">
+                            <h5>HELADERÍAS</h5>
+                        </a></li>
+                    <li> <a href="heladerias.html">
+                            <h5>CAFETERÍAS</h5>
+                        </a></li>
+                    <li> <a href="heladerias.html">
+                            <h5>FOOD TRUCKS</h5>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="profile-menu">
+                <button class="profile-menu-toggle">
+                    <img src="img/flautas.jpg" alt="Foto de perfil" class="profile-menu">
+                    <span class="profile-menu">Mi perfil</span>
+                    <span class="profile-menu">▼</span>
+                </button>
+                <div class="profile-menu-options">
+                    <a href="login.html" class="profile-menu">Iniciar sesión</a>
+                    <a href="" class="profile-menu">Asistencia</a>
+                </div>
+            </div>
+    </nav>
+    </header>
+    <section class="banner-local">
+        <img class="logo-banner" src="./img/wonder-pizza.png">
+    </section>
+    <main class="main-container">
+        <aside class="aside-info">
+            <p class="texto">Wonder Pizza es una pizzeria localizada en Concepción, inaugurada en el año 2005, la familia Pereira lleva deleitando más de 20 años 
+                con sus intensos sabores basados en las mejores pizzerias de Italia.</p>
+        </aside>
+        <section class="container-local">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/pizza.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/pizza.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/pizza.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            <article class="container-info">
+                <span class="contacto">
+                    <p>¡Encuéntranos en Barros Arana 219!</p>
+                    <p>O contactanos directamente al +569 3458 8333</p>
+                    <p>Encuentranos en Pedidos Ya, Rappi o Uber Eats</p>
+                </span>
+                <span class="reseñas"><section style="color: #000; background-color: rgb(75, 7, 7);">
+                    <div class="container py-5 text-center">
+                      <div class="row">
+                        <!-- Testimonial Card -->
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img src="..." class="img-reseña"  height="100" />
+                              <h5>Teresa May 4.0</h5>
+                              <p><i class="fas fa-quote-left pe-2"></i>Totalmente recomendado, atención 100% personalizada.</p>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- Duplicate the card structure for additional testimonials -->
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img src="..." class="img-reseña"  height="100" />
+                              <h5>Simón Martinez 3.9</h5>
+                              <p><i class="fas fa-quote-left pe-2"></i>Las pizzas más ricas de Conce.</p>
+                  
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-md-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <img src="..." class="img-reseña" height="100" />
+                              <h5>Alexa Horwitz 4.7</h5>
+
+                              <p><i class="fas fa-quote-left pe-2"></i>Han sido las mejores pizzas que he probado.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal">
+                        Enviar una reseña
+                      </button>
+                  </section>
+                  </span>
+            </article>
+            <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="reviewModalLabel">Enviar una reseña</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <form>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="name">Nombre</label>
+                          <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="rating">Calificación</label>
+                          <select class="form-control" id="rating" required>
+                            <option value="">Selecciona</option>
+                            <option value="1">1 estrella</option>
+                            <option value="2">2 estrellas</option>
+                            <option value="3">3 estrellas</option>
+                            <option value="4">4 estrellas</option>
+                            <option value="5">5 estrellas</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="review">Reseña</label>
+                          <textarea class="form-control" id="review" rows="3" placeholder="Escribe tu reseña aquí" required></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
