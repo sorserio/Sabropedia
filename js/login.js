@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const registroComercialBtn = document.getElementById('registroComercial');
     
     // Evento para el botón "Regístrate como Persona"
-    registroPersonaBtn.addEventListener('click', function() {
-        window.location.href = 'registroPersona.html';  // Redirige a la página de registro de persona
+    registroPersonas.addEventListener('click', function() {
+        window.location.href = 'registroPersonas.html';  // Redirige a la página de registro de persona
     });
 
     // Evento para el botón "Regístrate como Comercial"
-    registroComercialBtn.addEventListener('click', function() {
-        window.location.href = 'registroComercial.html';  // Redirige a la página de registro comercial
+    registroLocal.addEventListener('click', function() {
+        window.location.href = 'registroLocales.html';  // Redirige a la página de registro comercial
     });
 });
 

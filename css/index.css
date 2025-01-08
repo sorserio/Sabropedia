@@ -26,12 +26,12 @@ body {
     border: none;
 } */
 
-.headerSection {
-    background-color: #a62921;
+.navegador {
+    background-color: #A62921;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 120px;
+    height: 100px;
 }
 .logo {
     width: 220px;
