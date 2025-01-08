@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabropedia</title>
+    <link rel="stylesheet" href="css/perfilLocal.css">
+</head>
+<body>
+    <nav class="navegador">
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <ul class="nav-buttons">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="restaurantes.html">RESTAURANTES</a></li>
+            <li><a href="heladerias.html">HELADERÍAS</a></li>
+            <li><a href="cafeterias.html">CAFETERÍAS</a></li>
+            <li><a href="foodtrucks.html">FOOD TRUCKS</a></li>
+        </ul>
+        <div class="profile-menu">
+            <button class="profile-menu-toggle">
+                <img src="img/flautas.jpg" alt="Foto de perfil">
+                <span>Mi perfil</span>
+                <span>▼</span>
+            </button>
+            <div class="profile-menu-options">
+                <a href="login.html">Iniciar sesión</a>
+                <a href="asistencia.php">Asistencia</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner-local">
+       
+    </section>
+
+    <main class="main-container">
+        <aside class="aside-info">
+            <h3>Pizzería Wonder Pizza</h3>
+            <p>Un prestigioso restaurante de la ciudad de Concepción</p>
+            <h4>Dirección:</h4>
+            <p>Calle Ficticia 123, Ciudad XYZ</p>
+            <h4>Teléfono:</h4>
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </aside>
+
+        <section class="container-local">
+            <article class="carrusel">
+                <h4>Galería de imágenes</h4>
+                <div class="gallery">
+                    <img src="./img/local/comida-mexicana.jpg" alt="Imagen 1" class="gallery-img">
+                    <img src="./img/local/comida-mexicana.jpg" alt="Imagen 2" class="gallery-img">
+                    <img src="./img/local/comida-mexicana.jpg" alt="Imagen 3" class="gallery-img">
+                </div>
+            </article>
+            <article class="container-info">
+                <span class="contacto">
+                    <h4>Contáctanos</h4>
+                    <a href="mailto:contacto@wonderpizza.com">contacto@wonderpizza.com</a>
+                </span>
+                <span class="reseñas">
+                    <h4>Reseñas de los usuarios</h4>
+                    <form id="review-form">
+                        <textarea id="review-comment" placeholder="Escribe tu reseña aquí..." required></textarea>
+                        <div class="rating">
+                            <label>Valoración:</label>
+                            <div class="stars" id="rating-stars">
+                                <input type="hidden" id="rating-value" required>
+                                <span data-value="1" class="star">★</span>
+                                <span data-value="2" class="star">★</span>
+                                <span data-value="3" class="star">★</span>
+                                <span data-value="4" class="star">★</span>
+                                <span data-value="5" class="star">★</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-review">Enviar Reseña</button>
+                    </form>
+                    <div id="reviews-container">
+                        <!-- Las reseñas dinámicas aparecerán aquí -->
+                    </div>
+                </span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Sabropedia. Todos los derechos reservados.</p>
+            <a href="mailto:admin@sabropedia.com">Contacto con los administradores</a>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="/politicas">Consulta nuestras políticas de privacidad</a>
+        </div>
+    </footer>
+</body>
+</html>

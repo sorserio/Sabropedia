@@ -1,0 +1,109 @@
+/* Reseteo global para evitar márgenes y padding inesperados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Mejora el cálculo del tamaño de los elementos */
+}
+
+.navegador {
+    width: 100%;
+    background-color: red;
+    height: 90px;
+}
+
+.logo {
+    width: 220px;
+    height: 120px;
+}
+
+.banner-local {
+    width: 100%;
+    background-color: blue;
+    height: 200px;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 800px; /* Uso de min-height para que se ajuste bien en todos los casos */
+    background-color: green;
+    padding: 20px;
+}
+
+.aside-info {
+    width: 20%;
+    min-height: 600px; /* Usamos min-height para no depender de contenido fijo */
+    background-color: yellow;
+    padding: 10px;
+}
+
+.container-local {
+    width: 70%;
+    min-height: 600px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Carrusel y sección de información */
+.carrusel {
+    width: 80%;
+    height: 250px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.container-info {
+    width: 80%;
+    height: 250px;
+    background-color: black;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.contacto {
+    width: 100%;
+    background-color: purple;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.reseñas {
+    width: 100%;
+    background-color: purple;
+    height: 100px;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+/* Media Queries para hacer el diseño más responsivo */
+@media (max-width: 768px) {
+    /* Adaptación de la estructura para pantallas más pequeñas */
+    .main-container {
+        flex-direction: column; /* Cambio a columna */
+        align-items: stretch;
+    }
+
+    .aside-info, .container-local {
+        width: 100%;
+        min-height: auto; /* La altura se ajustará automáticamente al contenido */
+    }
+
+    .carrusel, .container-info {
+        width: 100%; /* Hacer que estos contenedores se ajusten al 100% */
+        height: auto; /* Dejar que la altura se adapte al contenido */
+    }
+}

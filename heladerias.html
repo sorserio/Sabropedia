@@ -7,26 +7,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./main.js"></script>
     <title>Sabropedia</title>
 </head>
-
 <body>
-    <!-- Header section: Logo, title, and login/cart -->
     <header>
         <div class="headerSection">
             <img class="logo" src="./img/logo.png" alt="logo">
-
             <div class="search-container">
                 <input type="text" placeholder="Qué comemos hoy? ..." class="search-input">
                 <button class="search-button">&#128269;</button>
             </div>
-
             <div class="profile-menu">
                 <button class="profile-menu-toggle">
-                    <img src="img/flautas.jpg" alt="Foto de perfil" class="profile-menu">
+                    <img src="img/perfil.png" alt="Foto de perfil" class="profile-menu">
                     <span class="profile-menu">Mi perfil</span>
                     <span class="profile-menu">▼</span>
                 </button>
@@ -35,11 +32,8 @@
                     <a href="asistencia.php" class="profile-menu">Asistencia</a>
                 </div>
             </div>
-
         </div>
-
     </header>
-
     <div class="nav-bar">
         <div class="slogan">Qué calor... qué mejor que un rico helado!</div>
         <div class="nav-buttons">
@@ -57,19 +51,18 @@
             </ul>
         </div>
     </div>
-
-    <!-- Main body section: Contains left and right parts -->
     <main class="bodyCards">
-        <!-- First Column -->
-        <div class="column">
-            <!-- Card 1 -->
+        <section class="column">
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Los Pollsmanos</h3>
+                    <img class="local-img" src="./img/local/heladeria-montana.png" alt="Helados artesanales">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/heladeria-montana.png" alt="logo de Heladería Montana">
+                            <h3>Heladería Montana</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -77,14 +70,69 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Card 2 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
+                    <img class="local-img" src="./img/local/la-cremería.png" alt="helados artesanales">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/la-cremería.png" alt="logo de La Cremería">
+                            <h3>La Cremería</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 3.9</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/casa-helado.png" alt="helados artesanales con fruta">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/casa-helado.png" alt="logo de La Casa del Helado">
+                            <h3>La Casa del Helado</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 3.9</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section class="column">
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/heladeria-donpedro.png" alt="helados artesanales">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span> <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/DONPEDRO.png" alt="logo de Heladería Don Pedro">
+                            <h3>Heladería Don Pedro</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/gustavo.png" alt="conos de helado artesanales">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/logo-heladeria-gustavo.png" alt="logo de Heladería Gustavo">
                             <h3>Heladería Gustavo</h3>
                         </div>
                         <div class="mark">
@@ -93,15 +141,16 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Card 3 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/foodtruck.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Fritos food truck </h3>
+                    <img class="local-img" src="./img/local/heladeriayunna.png" alt="cono de helado con nueces">
+                    <div class="category">
+                        <span class="cat">HELADERÍA</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/yunna.png" alt="logo de Heladería Yunna">
+                            <h3>Heladería Yunna</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -109,58 +158,7 @@
                     </div>
                 </div>
             </a>
-        </div> <!-- Column Closer -->
-
-        <!-- Second Column -->
-        <div class="column">
-            <!-- Card 1 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/cafeteria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Cafe con Pastel</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            
-
-            <!-- Card 2 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana2.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Tijuana restobar</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Heladería Don Juan</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        </section>
     </main>
 
     <footer>
@@ -175,12 +173,5 @@
             <p><a href="/politicas" class="politicas">Consulta nuestras políticas de privacidad y datos del usuario</a></p>
         </div>
     </footer>
-
-
-
-    <!-- JavaScript file to handle interactions -->
-    <script src="./main.js"></script>
 </body>
-
-
 </html>

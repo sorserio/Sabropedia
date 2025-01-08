@@ -13,3 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'registroComercial.html';  // Redirige a la página de registro comercial
     });
 });
+
+

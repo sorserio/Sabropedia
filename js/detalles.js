@@ -1,32 +1,37 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const stars = document.querySelectorAll('.star');
-    const ratingValue = document.getElementById('rating-value');
-    let selectedValue = 0; // Valor para guardar la selección del usuario
+const reviewsContainer = document.getElementById("reviews-container");
+const reviewForm = document.getElementById("review-form");
 
-    stars.forEach((star, index) => {
-        // Selección permanente al hacer clic
-        star.addEventListener('click', () => {
-            selectedValue = index + 1; // Guarda la selección del usuario
-            ratingValue.value = selectedValue;
+// Obtener reseñas desde el backend
+async function fetchReviews() {
+    const response = await fetch("http://localhost:5500/reviews");
+    const reviews = await response.json();
 
-            // Marca las estrellas seleccionadas
-            stars.forEach((s, i) => {
-                s.classList.toggle('selected', i < selectedValue);
-            });
-        });
-
-        // Resalta temporalmente las estrellas al pasar el cursor
-        star.addEventListener('mouseover', () => {
-            stars.forEach((s, i) => {
-                s.classList.toggle('selected', i <= index);
-            });
-        });
-
-        // Restaura las estrellas según la selección del usuario al salir del área
-        star.addEventListener('mouseout', () => {
-            stars.forEach((s, i) => {
-                s.classList.toggle('selected', i < selectedValue);
-            });
-        });
+    reviewsContainer.innerHTML = "";
+    reviews.forEach((review) => {
+        const reviewElement = document.createElement("div");
+        reviewElement.className = "review";
+        reviewElement.innerHTML = `
+            <p><strong>Usuario</strong> (${review.rating} estrellas): "${review.comment}"</p>
+        `;
+        reviewsContainer.appendChild(reviewElement);
     });
+}
+
+// Enviar nueva reseña
+reviewForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const comment = document.getElementById("review-comment").value;
+    const rating = document.getElementById("rating-value").value;
+
+    await fetch("http://localhost:5500/detalles", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ comment, rating }),
+    });
+
+    reviewForm.reset();
+    fetchReviews();
 });
+
+// Inicializar
+fetchReviews();

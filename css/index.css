@@ -1,0 +1,650 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('/img/bg/food-bg-2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* #login {
+    display: flex;
+    align-items: flex-end;
+    background-color: #ffffff;
+    color: #CF362C;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+} */
+
+.headerSection {
+    background-color: #a62921;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+}
+.logo {
+    width: 220px;
+    height: 120px;
+}
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 500px;
+}
+.search-input {
+    justify-content: space-around;
+    flex: 1;
+    position: relative;
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.search-button:hover {
+    background-color: #0098b3;
+}
+.slogan {
+    display: flex;
+    color: #ffff;
+    padding: 30px;
+    font-size: 2.1rem;
+    font-weight: 450;
+    font-family: Rubik;
+    width: 30%;
+}
+
+
+.nav-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-buttons ul{
+    display: flex; 
+    padding: 10px;
+    font-weight: 500;
+    justify-content: space-around;
+    gap: 20px; 
+}
+
+.nav-buttons ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+.nav-buttons ul li {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.nav-buttons ul li a {
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-buttons ul li a:hover {
+    background-color: #ffffff;
+    color: #3C3C43;
+}
+
+li a i {
+    margin-right: 8px; 
+  }
+.bodyCards {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+/* Estilo para el botón hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;
+}
+.local-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+    position: relative;
+    cursor: pointer;
+    padding: 0px;
+    width: 30rem;
+    background: #000000c4;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+}
+
+.logo-name-mark {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.logo-name-mark h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.logo-name-mark img {
+    display: flex;
+    border: 1px solid #4747479a;
+    border-radius: 30%;
+    height: 60px;
+    width: 60px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    flex: 1;
+}
+
+.mark {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: #f39c12;
+    white-space: nowrap;
+}
+
+.mark i {
+    margin-right: 5px;
+}
+
+.logo-name {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto actual */
+}
+
+
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.footer-container p {
+    margin: 10px 0;
+}
+
+.footer-container a {
+    color: #FFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+/* Contenedor principal */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón desplegable */
+.profile-menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Imagen de perfil */
+.profile-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.profile-menu img:hover {
+    border-color: #f5c518;
+}
+
+
+.profile-menu span:last-child {
+    font-size: 0.8rem;
+}
+
+.profile-menu-options {
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del botón */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: 150px;
+}
+
+.profile-menu-options a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.profile-menu-options a:hover {
+    background-color: #f5c518;
+    color: white;
+}
+
+/* Mostrar el menú al hacer hover */
+.profile-menu:hover .profile-menu-options {
+    display: block;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyCards {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 100000px;
+    }
+    .column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 80%; /* Ajustar el ancho de las tarjetas para pantallas pequeñas */
+    }
+    .card-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .slogan {
+        font-size: 1.5rem; /* Reducir el tamaño del texto */
+        text-align: center; /* Centrar el texto */
+        width: 100%; /* Asegurarse de que no ocupe demasiado espacio */
+    }
+    .headerSection{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+    .nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+
+    
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: 300px;
+        width: 100%;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        font-size: 1rem;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    
+    .nav-buttons ul{
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        font-weight: 500;    
+        list-style: none; 
+        
+    }
+   
+    .nav-buttons ul li {
+        font-size: 1.1rem;
+        color: #ffffff;
+    }
+    
+    .nav-buttons ul li a {
+       
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.315);
+        font-size: 1rem;
+        border-radius: 25px;
+        text-decoration: none;
+        border: 2px solid #ffffff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-buttons ul li a:hover {
+        background-color: #ffffff;
+        color: #3C3C43;
+    }
+    
+    
+    .menu-toggle {
+        display: flex;
+    }
+    .search-container {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 500px;
+        width: 80%;
+    }
+    .search-input {
+        justify-content: space-around;
+        flex: 1;
+        position: relative;
+        border: none;
+        padding: 10px 15px;
+        outline: none;
+        font-size: 16px;
+    }
+    
+    .search-button {
+        justify-content: space-around;
+        background-color: #ffffff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease;
+    }
+    .search-button:hover {
+        background-color: #0098b3;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1500px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bodyCards {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: 100000px;
+    }
+    .column{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+    }
+    .card {
+        width: 80%; /* Ajustar el ancho de las tarjetas para pantallas pequeñas */
+    }
+    .card-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .slogan {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        
+        width: 100%; 
+    }
+    .headerSection{
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav-buttons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: 300px;
+        width: 50%;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        font-size: 1rem;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    
+    .nav-buttons ul{
+        display: flex; 
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
+        font-weight: 500;    
+        list-style: none; 
+        
+    }
+   
+    .nav-buttons ul li {
+        font-size: 1.1rem;
+        color: #ffffff;
+    }
+    
+    .nav-buttons ul li a {
+       
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.315);
+        font-size: 1rem;
+        border-radius: 25px;
+        text-decoration: none;
+        border: 2px solid #ffffff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-buttons ul li a:hover {
+        background-color: #ffffff;
+        color: #3C3C43;
+    }
+    
+
+}

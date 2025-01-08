@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./main.js"></script>
     <title>Sabropedia</title>
 </head>
-
 <body>
-    <!-- Header section: Logo, title, and login/cart -->
     <header>
         <div class="headerSection">
             <img class="logo" src="./img/logo.png" alt="logo">
@@ -26,7 +24,7 @@
 
             <div class="profile-menu">
                 <button class="profile-menu-toggle">
-                    <img src="img/flautas.jpg" alt="Foto de perfil" class="profile-menu">
+                    <img src="img/perfil.png" alt="Foto de perfil" class="profile-menu">
                     <span class="profile-menu">Mi perfil</span>
                     <span class="profile-menu">▼</span>
                 </button>
@@ -35,13 +33,10 @@
                     <a href="asistencia.php" class="profile-menu">Asistencia</a>
                 </div>
             </div>
-
         </div>
-
     </header>
-
     <div class="nav-bar">
-        <div class="slogan">Qué tal si buscamos un Food Truck.</div>
+        <div class="slogan">Qué mejor que ir a probar un buen Food Truck...</div>
         <div class="nav-buttons">
             <ul>
                 <li> <a href="index.html">
@@ -57,19 +52,52 @@
             </ul>
         </div>
     </div>
-
-    <!-- Main body section: Contains left and right parts -->
     <main class="bodyCards">
-        <!-- First Column -->
-        <div class="column">
-            <!-- Card 1 -->
+        <section class="column">
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Los Pollsmanos</h3>
+                    <img class="local-img" src="./img/local/mrfrench.png" alt="imagen de papas fritas">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/mrfrench.png" alt="logo de Mr. French Fries">
+                            <h3>Mr. French Fries</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/elbajon.png" alt="portada de buen bajón">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/buenbajon.png" alt="logo buen bajón">
+                            <h3>Buen Bajón</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 4.1</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/estacion62.png" alt="Food truck estación 62">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/estacion62.png" alt="logo de estación 62">
+                            <h3>Estación 62</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -77,15 +105,18 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Card 2 -->
+        </section>
+        <section class="column">
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Heladería Gustavo</h3>
+                    <img class="local-img" src="./img/local/fritas.png" alt="sopaipillas">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/fritas.png" alt="logo de fritas food truck">
+                            <h3>Fritas Food Truck</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -93,15 +124,16 @@
                     </div>
                 </div>
             </a>
-
-            <!-- Card 3 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/foodtruck.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Fritos food truck </h3>
+                    <img class="local-img" src="./img/local/churros-truck.png" alt="ramo de churros">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/churros-truck.png" alt="logo de churros truck">
+                            <h3>Churros Truck</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -109,18 +141,16 @@
                     </div>
                 </div>
             </a>
-        </div> <!-- Column Closer -->
-
-        <!-- Second Column -->
-        <div class="column">
-            <!-- Card 1 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/cafeteria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Cafe con Pastel</h3>
+                    <img class="local-img" src="./img/local/burger-world.png" alt="hamburgesa">
+                    <div class="category">
+                        <span class="cat">FOOD TRUCK</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/burger-world.png" alt="logo de burger world">
+                            <h3>Burger World</h3>
                         </div>
                         <div class="mark">
                             <span><i class="fa fa-star"></i> 3.9</span>
@@ -128,41 +158,8 @@
                     </div>
                 </div>
             </a>
-            
-
-            <!-- Card 2 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana2.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Tijuana restobar</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Heladería Don Juan</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        </section>
     </main>
-
     <footer>
         <div class="footer-container">
             <p>&copy; 2024 Sabropedia. Todos los derechos reservados.</p>
@@ -175,12 +172,5 @@
             <p><a href="/politicas" class="politicas">Consulta nuestras políticas de privacidad y datos del usuario</a></p>
         </div>
     </footer>
-
-
-
-    <!-- JavaScript file to handle interactions -->
-    <script src="./main.js"></script>
 </body>
-
-
 </html>

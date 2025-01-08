@@ -1,186 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./main.js"></script>
     <title>Sabropedia</title>
 </head>
-
 <body>
-    <!-- Header section: Logo, title, and login/cart -->
     <header>
         <div class="headerSection">
             <img class="logo" src="./img/logo.png" alt="logo">
-
             <div class="search-container">
                 <input type="text" placeholder="Qué comemos hoy? ..." class="search-input">
                 <button class="search-button">&#128269;</button>
             </div>
-
             <div class="profile-menu">
                 <button class="profile-menu-toggle">
-                    <a href="perfil.html"><img src="img/flautas.jpg" alt="Foto de perfil" class="profile-menu"></a>
+                    <a href="/perfil.html"><img src="img/perfil.png" alt="Foto de perfil" class="profile-menu"></a>
                     <span class="profile-menu">Mi perfil</span>
                     <span class="profile-menu">▼</span>
                 </button>
                 <div class="profile-menu-options">
-                    <a href="login.html" class="profile-menu">Iniciar sesión</a>
-                    <a href="asistencia.php" class="profile-menu">Asistencia</a>
+                    <a href="login.html" class="profile-menu">Cerrar sesión</a>
+                    <a href="asistencia.html" class="profile-menu">Asistencia</a>
                 </div>
             </div>
-
         </div>
-
     </header>
-
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="slogan">Donde el saber y el sabor se encuentran.</div>
         <div class="nav-buttons">
             <ul>
-                <li> <a href="index.html">
-                    <i class="fa-solid fa-house"></i><h5>INICIO</h5></a></li>
-                <li> <a href="restaurantes.html">
-                    <i class="fa-solid fa-utensils"></i><h5>RESTAURANTES</h5></a></li>
-                <li> <a href="heladerias.html">
-                    <i class="fa-solid fa-ice-cream"></i><h5>HELADERÍAS</h5></a></li>
-                <li> <a href="cafeterias.html">
-                    <i class="fa-solid fa-mug-saucer"></i><h5>CAFETERÍAS</h5></a></li>
-                <li> <a href="foodtrucks.html">
-                    <i class="fa-solid fa-truck"></i><h5>FOOD TRUCKS</h5></a></li>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i><h5>INICIO</h5></a></li>
+                <li><a href="restaurantes.html"><i class="fa-solid fa-utensils"></i><h5>RESTAURANTES</h5></a></li>
+                <li><a href="heladerias.html"><i class="fa-solid fa-ice-cream"></i><h5>HELADERÍAS</h5></a></li>
+                <li><a href="cafeterias.html"><i class="fa-solid fa-mug-saucer"></i><h5>CAFETERÍAS</h5></a></li>
+                <li><a href="foodtrucks.html"><i class="fa-solid fa-truck"></i><h5>FOOD TRUCKS</h5></a></li>
             </ul>
         </div>
-    </div>
-
-    <!-- Main body section: Contains left and right parts -->
+    </nav>
     <main class="bodyCards">
-        <!-- First Column -->
-        <div class="column">
-            <!-- Card 1 -->
+        <section class="column">
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana.jpg" alt="comida-mexicana">
+                    <img class="local-img" src="./img/local/wonder-pizza.png" alt="comida-mexicana">
                     <div class="category">
-                        <span class="cat">RESTAURANTE</span>
+                        <span class="cat">RESTAURANTE</span> <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Los Pollsmanos</h3>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/wonder.png" alt="orden-tacos">
+                            <h3>Pizzería Wonder Pizza</h3>
                         </div>
                         <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
+                            <span><i class="fa fa-star"></i> 5</span>
                         </div>
                     </div>
                 </div>
             </a>
-
-            <!-- Card 2 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
+                    <img class="local-img" src="./img/local/casa-helado.png" alt="comida-mexicana">
                     <div class="category">
                         <span class="cat">HELADERÍA</span>
                     </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Heladería Gustavo</h3>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/casa-helado.png" alt="orden-tacos">
+                            <h3>La Casa del Helado</h3>
                         </div>
                         <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
+                            <span><i class="fa fa-star"></i> 4.8</span>
                         </div>
                     </div>
                 </div>
             </a>
-
-            <!-- Card 3 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/foodtruck.jpg" alt="comida-mexicana">
+                    <img class="local-img" src="./img/local/delicias-altamar.png" alt="comida-mexicana">
+                    <div class="category">
+                        <span class="cat">RESTAURANTE</span>
+                    </div>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/delicias-altamar.png" alt="orden-tacos">
+                            <h3>Delicias de Altamar</h3>
+                        </div>
+                        <div class="mark">
+                            <span><i class="fa fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <section class="column">
+            <a href="/detalles.html" class="card-link">
+                <div class="card">
+                    <img class="local-img" src="./img/local/elbajon.png" alt="comida-mexicana">
                     <div class="category">
                         <span class="cat">FOOD TRUCK</span>
                     </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Fritos food truck </h3>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/buenbajon.png" alt="orden-tacos">
+                            <h3>Buen Bajón</h3>
                         </div>
                         <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
+                            <span><i class="fa fa-star"></i> 4.1</span>
                         </div>
                     </div>
                 </div>
             </a>
-        </div> <!-- Column Closer -->
-
-        <!-- Second Column -->
-        <div class="column">
-            <!-- Card 1 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/cafeteria.jpg" alt="comida-mexicana">
+                    <img class="local-img" src="./img/local/sanjorge.png" alt="comida-mexicana">
                     <div class="category">
                         <span class="cat">CAFETERÍA</span>
                     </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Cafe con Pastel</h3>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/sanjorge.png" alt="orden-tacos">
+                            <h3>San Jorge Cafeterías</h3>
                         </div>
                         <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
+                            <span><i class="fa fa-star"></i> 4.3</span>
                         </div>
                     </div>
                 </div>
             </a>
-            
-
-            <!-- Card 2 -->
             <a href="/detalles.html" class="card-link">
                 <div class="card">
-                    <img class="local-img" src="./img/comida-mexicana2.jpg" alt="comida-mexicana">
+                    <img class="local-img" src="./img/local/heladeria-donpedro.png" alt="comida-mexicana">
                     <div class="category">
-                        <span class="cat">RESTAURANTE</span>
+                        <span class="cat">HELADERÍA</span> <i class="fa-solid fa-circle-check"></i>
                     </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Tijuana restobar</h3>
+                    <div class="logo-name-mark">
+                        <div class="logo-name">
+                            <img src="./img/logo/DONPEDRO.png" alt="orden-tacos">
+                            <h3>Heladería Don Pedro</h3>
                         </div>
                         <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
+                            <span><i class="fa fa-star"></i> 4.0</span>
                         </div>
                     </div>
                 </div>
             </a>
-
-            <!-- Card 3 -->
-            <a href="/detalles.html" class="card-link">
-                <div class="card">
-                    <img class="local-img" src="./img/Heladeria.jpg" alt="comida-mexicana">
-                    <div class="category">
-                        <span class="cat">HELADERÍA</span>
-                    </div>
-                    <div class="brand-mark">
-                        <div class="branding">
-                            <img src="./img/logo-restorant.png" alt="orden-tacos">
-                            <h3>Heladería Don Juan</h3>
-                        </div>
-                        <div class="mark">
-                            <span><i class="fa fa-star"></i> 3.9</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
+        </section>
     </main>
-
     <footer>
         <div class="footer-container">
             <p>&copy; 2024 Sabropedia. Todos los derechos reservados.</p>
@@ -190,15 +162,8 @@
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
-            <p><a href="/politicas" class="politicas">Consulta nuestras políticas de privacidad y datos del usuario</a></p>
+            <p><a href="/politicas.html" class="politicas">Consulta nuestras políticas de privacidad y datos del usuario</a></p>
         </div>
     </footer>
-
-
-
-    <!-- JavaScript file to handle interactions -->
-    <script src="./main.js"></script>
 </body>
-
-
 </html>
