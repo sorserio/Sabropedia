@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/perfilLocal.css">
+    <link rel="stylesheet" href="css/perfilLocal3.css">
     <script defer src="./detalle.js"></script>
 </head>
 <body>
@@ -54,16 +54,19 @@
     </header>
 
     <main class="main-container">
-        <aside class="aside-info">
-          <img class="logo-banner" src="./img/logo/wonder.png">
-          <p class="texto1">Wonder Pizza <i class="fa-solid fa-circle-check"></i></p>
-            <p class="texto2">Descubre la magia de Wonder Pizza, donde cada rebanada es un mundo de sabor. Ubicados en el corazón de Concepción,
-              te ofrecemos pizzas artesanales con ingredientes frescos y un toque único que hará que siempre quieras regresar.</p>
-        </aside>
+      <aside class="aside-info">
+        <img class="logo-banner" src="./img/logo/wonder.png" alt="Wonder Pizza Logo">
+        <p class="texto1">Wonder Pizza <i class="fa-solid fa-circle-check"></i></p>
+        <p id="texto2" class="texto2">Descubre la magia de Wonder Pizza, donde cada rebanada es un mundo de sabor. Ubicados en el corazón de Concepción,
+          te ofrecemos pizzas artesanales con ingredientes frescos y un toque único que hará que siempre quieras regresar.</p>
+        <button class="boton-editar" onclick="modificarTexto()">Modificar Texto</button>
+      </aside>
         <section class="container-local">
           
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
+
+
                   <div class="carousel-item active">
                     <img src="./img/carrusel/pizza1.png" class="d-block w-100" alt="...">
                   </div>
@@ -93,7 +96,13 @@
                       <li>Sábados y domingos: 11:30 - 00:00 </li>
                     </ul>
                     <p>O contactanos directamente al +56 (41) 123 4567</p>
+
+                    <a href="">editar texto </a>
+                    <a href="">agregar imagenes </a>
+
                 </span>
+
+
                 <span class="reseñas"><section style="color: #ffffff; background-color: #FF9D1A; border-radius: 12px;">
                     <div class="container py-5 text-center">
                       <div class="row">
@@ -105,6 +114,7 @@
                               <h5>Matias Sobrazo 2.4</h5>
                               <p><i class="fas fa-quote-left pe-2"></i>Cuando tenía 15 años, tuve que soportar la pérdida de un amigo, 
                                 creí que había sido el día más duro en mi vida, hasta que probé la pizza de ustedes...</p>
+                                <a href="">Responder reseña</a>
                             </div>
                           </div>
                         </div>
