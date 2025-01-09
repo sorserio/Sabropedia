@@ -298,3 +298,10 @@ footer {
 .footer-container a:hover {
     color: #ffffff;
 }
+
+.editor {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: #A62921;
+}

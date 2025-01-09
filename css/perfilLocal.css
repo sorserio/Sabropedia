@@ -158,7 +158,7 @@ li a i {
     padding: 15px;
     justify-content: center;
     width: 100%;
-    height: 1115px;
+    height: 1180px;
     background-color: rgb(107, 22, 22);
 }
 
@@ -220,8 +220,9 @@ li a i {
     font-weight: 600;
     font-size: 1.3rem;
     width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
+    height: 340px;
+    margin-top: 44px;
+    padding-bottom: 10px;
     border-radius: 12px;
     flex-direction: column;
     justify-content: center;
@@ -230,7 +231,14 @@ li a i {
     align-items: center;
 }
 
+.image-button {
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+}
+
 .reseñas {
+    padding-top: 20px;
     width: 100%;    
     height: 100px;
 }
