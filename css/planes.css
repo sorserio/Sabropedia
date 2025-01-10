@@ -1,0 +1,121 @@
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/bg/food-bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+  }
+  .headerSection {
+    display: flex;
+    justify-content: center;
+    background-color: #CF362C;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+  .container {
+    display: flex;
+    height: 700px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Estilo de las tarjetas */
+  .card {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Encabezado de la tarjeta */
+  .header {
+    padding: 20px;
+    color: white;
+  }
+  
+  .inicio {
+    background-color: #443919;
+  }
+  
+  .premium {
+    background-color: #dc3545;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* Cuerpo de la tarjeta */
+  .body {
+    padding: 20px;
+    height: 200px; /* Altura fija */
+    overflow-y: auto; /* Habilita scroll si el contenido excede la altura */
+    text-align: left;
+    background-color: white;
+  }
+  
+  .body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .body ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Pie de la tarjeta */
+  .footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .inicio-btn {
+    background-color: #443919;
+  }
+  
+ 
+  
+  .premium-btn {
+    background-color: #dc3545;
+  }
+  

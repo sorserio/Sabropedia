@@ -236,6 +236,10 @@ li a i {
     width: 60px;
 }
 
+
+.logo-name .fa-solid {
+    color: #3090eb;
+}
 .header {
     display: flex;
     justify-content: space-between;

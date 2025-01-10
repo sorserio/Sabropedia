@@ -1,30 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-7n4FpsPSOTAXb8fdUTyz1CdO2TAjAcJ3Dcc03zFLwGNT5C5z4JRA5y3XkbQw8w47" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Suscripción</title>
+  <link rel="stylesheet" href="/css/planes.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes de Suscripción</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="headerSection">
+        <a href="/index.html">
+            <img class="logo" src="./img/logo.png" alt="logo">
+        </a>
+    </div>
+</header>
+  <div class="container">
+    <!-- Tarjeta INICIO -->
+    <div class="card">
+      <div class="header inicio">
+        <h4 class="title">PLAN BÁSICO</h4>
+        <p class="price">9.900 CLP MENSUAL</p>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-wEEW8UFwWzYHpy1xgRqGxkF7tLWuEyHoIb6qM78oJgNpa/rfE5WhME5YfRmOqzTh" crossorigin="anonymous"></script>
+      <div class="body">
+        <ul>
+          <li>✔ Visibilidad en la plataforma</li>
+          <li>✔ Carrusel de 3 imágenes</li>
+          <li>✔ Asistencia técnica</li>
+          <li>✔ Posibilidad de recibir reseñas</li>
+          <li>✔ Estadisticas básicas</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button onclick="window.location.href='/index.html'" class="btn inicio-btn">CONTRATALO AHORA</button>
+      </div>
+    </div>
+
+
+    <!-- Tarjeta PREMIUM -->
+    <div class="card">
+      <div class="header premium">
+        <h4 class="title">PLAN AVANZADO</h4>
+        <p class="price">14.990 CLP MENSUAL</p>
+      </div>
+      <div class="body">
+        <ul>
+          <li>✔ Todo lo incluido en el Plan Básico</li>
+          <li>✔ Insignia de verificación</li>
+          <li>✔ Servicio de fotografía</li>
+          <li>✔ Estadisticas avanzadas</li>
+          <li>✔ Integración de servicios de delivery</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <button onclick="window.location.href='/index.html'"class="btn premium-btn">CONTRATALO AHORA</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
 </body>
 </html>

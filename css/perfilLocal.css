@@ -158,7 +158,7 @@ li a i {
     padding: 15px;
     justify-content: center;
     width: 100%;
-    height: 1180px;
+    height: 1295px;
     background-color: rgb(107, 22, 22);
 }
 
@@ -179,6 +179,10 @@ li a i {
     text-align: center;
     font-weight: bold;
     width: 60%;
+}
+
+.texto1 .fa-solid {
+    color: #3090eb;
 }
 
 .texto2{
@@ -221,7 +225,8 @@ li a i {
     font-size: 1.3rem;
     width: 100%;
     height: 340px;
-    margin-top: 44px;
+    margin-top: 110px;
+    padding-top: 40px;
     padding-bottom: 10px;
     border-radius: 12px;
     flex-direction: column;
@@ -231,9 +236,19 @@ li a i {
     align-items: center;
 }
 
+.contacto img {
+    cursor: pointer;
+    height: 120px;
+    padding-left: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .image-button {
     border-radius: 50px;
-    height: 50px;
+    height: 20px;
+    width: 20px;
     display: flex;
 }
 
@@ -267,6 +282,7 @@ li a i {
 .card-body {
     background-color: #b46e11;
     border-radius: 30px;
+    height: 500px;
 }
 .img-reseña {
     border-radius: 12px;
@@ -289,7 +305,7 @@ footer {
 .footer-container {
     max-width: 900px;
     margin: 0 auto;
-    line-height: 1.6;
+
 }
 
 .footer-container p {
@@ -302,6 +318,3 @@ footer {
     transition: color 0.3s ease;
 }
 
-.footer-container a:hover {
-    color: #ffffff;
-}
