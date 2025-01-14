@@ -1,4 +1,4 @@
-    Estructura:
+    Manual de usuario
 
     Introducción:
         ¿Qué es Sabropedia? Sabropedia es una propuesta a aquellos que buscan visibilidad y
