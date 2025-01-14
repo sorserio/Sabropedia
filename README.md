@@ -1,7 +1,8 @@
     Estructura:
 
     Introducción:
-        ¿Qué es Sabropedia? Sabropedia es una propuesta a aquellos que buscan visibilidad y una mayor alcance de público en sus Locales Comerciales, a través de una plataforma clara y consistente,
+        ¿Qué es Sabropedia? Sabropedia es una propuesta a aquellos que buscan visibilidad y
+        un mayor alcance de público en sus Locales Comerciales, a través de una plataforma clara y consistente,
         la cual ofrece distintos planes con servicios específicos según las necesidades de cada usuario.
         Público objetivo: Dueños de locales gastronómicos que buscan una mayor visibilidad.
     Requisitos para el usuario:
